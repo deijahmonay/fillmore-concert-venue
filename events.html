@@ -1,144 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Events - The Fillmore</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events &#124; The Fillmore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-
-  <style>
-    main {
-      padding: 20px;
-    }
-
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 20px;
-}
-    section {
-      background-color: rgb(16, 30, 40);
-      border-radius: 5px;
-      padding: 25px;
-    }
-
-    h1 {
-      color: rgb(217, 188, 50);
-      text-align: center;
-      font-weight: bold;
-      font-size: 28px;
-    }
-
-    article {
-    background-color: rgb(35, 94, 131);
-    padding: 20px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
-
-  article h3 {
-    color: rgb(243, 217, 84);
-    margin-bottom: 10px;
-    font-size: 20px;
-  }
-
-  article p {
-    color: rgb(211, 211, 191);
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-
-
-  article a {
-    color: rgb(0, 240, 156);
-    text-decoration: none;
-  }
-
-  article a:hover {
-    color: yellowgreen;
-    text-decoration: underline;
-    font-weight: bold;
-  }
-
-  article a:active {
-    color: rgb(205, 50, 50);
-    font-weight: bold;
-  }
-
-
-
-  </style>
 </head>
 <body>
+
   <header>
-    <nav class="navbar">
-      <img src="photos/reallogo.png" alt="Offical Logo" width="100" height="77">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="menu.html">Food &amp; Drinks</a></li>
-        <li><a href="location.html">Location</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="photos/reallogo.png" alt="The Fillmore logo" width="100" height="77"></a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Food &amp; Drinks</a></li>
+            <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main>
-   <img src="photos/events.png" alt="Events Page Image" width="560" height="530">
-
-    <section>
-      <h1>Upcoming Concerts &amp; Events</h1>
-
-      <article>
-        <h3>FLO **MOVED TO FILLMORE DETROIT**</h3>
-        <p><strong>Date:</strong> May 5th&#44; 2025</p>
-        <p>Feel the energy as UK&#39;s breakout R&B trio FLO lights up the stage with powerhouse vocals and viral grooves—this is the live show everyone&#39;s raving about&#33;
-          Click <a href="https://www.flolikethis.com/">FLO</a> to lock in your tickets now and be part of the musical moment of the year&#46;</p>
-      </article>
-
-      <article>
-        <h3>SABRINA CARPENTER: SHORT N&#39; SWEET TOUR</h3>
-        <p><strong>Date:</strong> May 13th&#44; 2025</p>
-        <p>GPrepare for Sabrina Carpenter&#39;s Short N&#39; Sweet Tour—a non-stop pop explosion of irresistible hooks and jaw-dropping stagecraft that&#39;ll have you dancing in the aisles&#33;
-          Click <a href="https://store.sabrinacarpenter.com/pages/tour?srsltid=AfmBOoplemmqHbo-mPABT6CmH5__Q-e07bnM7W_s199C3ZvO0TEF4IoP">Sabrina Carpenter</a> to secure your tickets now before they vanish and join the ultimate pop celebration of the year&#46;</p>
-      </article>
-
-      <article>
-        <h3>SiR: The Step Into The Light Tour</h3>
-        <p><strong>Date:</strong> May 13th&#44; 2025</p>
-        <p>Get swept away by SiR&#39;s Step Into The Light Tour—an electrifying R&B odyssey of smooth grooves and soul-stirring vibes that will illuminate every stage&#33;
-          Click <a href="https://www.inglewoodsir.com/">SiR</a> to secure your tickets now and step into the spotlight with us&#33;</p>
-      </article>
-
-      <article>
-        <h3>Beyonce: COWBOY CARTER TOUR</h3>
-        <p><strong>Date: </strong> May 16th&#44; 2025</p>
-        <p>Saddle up for Beyonc&#233;&#39;s Cowboy Carter Tour as she fuses country charm with pop royalty in an unforgettable live spectacle&#33;
-          Click <a href="https://www.beyonce.com/">Beyoncé</a> to secure your tickets now and be part of the concert event of the year&#46;</p>
-      </article>
-
-      <article>
-        <h3>EDC DETROIT: ELECTRIC DAISY CARNIVAL 2025</h3>
-        <p><strong>Date: </strong>May 14th&#44; 2025</p>
-        <p>Brace yourself for Electric Daisy Carnival Detroit—a neon-fueled spectacle of world-class DJs&#44; immersive stage design&#44; and non-stop dance beats that will set the Motor City alight&#33;  
-           Click <a href="https://lasvegas.electricdaisycarnival.com/">EDC Detroit</a> to grab your tickets now before they vanish and be part of the ultimate electronic festival of the year&#46;</p>
-      </article>
-      
-
-      <article>
-        <h3>BILLIE EILISH: HIT ME HARD AND SOFT: THE TOUR</h3>
-        <p><strong>Date:</strong> May 24th&#44; 2025</p>
-        <p>Brace yourself for Billie Eilish&#39;s Hit Me Hard and Soft Tour—a heart-racing fusion of intimate whispers and sky-shaking crescendos that&#39;ll leave you breathless&#33;
-          Click <a href="https://store.billieeilish.com/?srsltid=AfmBOop9t1gN5llzhKPcVH2r0W3qnKC4B5Pec97hYx3JxPPFV5Lpn7Qo">Billie Eilish</a> to grab your tickets now before they sell out and be part of the seismic music event of the year&#46;</p>
-      </article>
-    </section>
+  <main class="container-fluid px-0">
+    <div class="position-relative text-center mb-5">
+      <img src="photos/crowdsurg.png" alt="Crowd at concert" class="img-fluid w-100 rounded shadow" style="max-height:450px;object-fit:cover;">
+      <div class="position-absolute top-50 start-50 translate-middle text-white">
+        <h1 class="display-4 fw-bold" style="text-shadow:1px 1px 6px rgba(0,0,0,.7);">Upcoming Events</h1>
+      </div>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 The FillMore Concert &amp; Event Center. All rights reserved&#46;</p>
+  <main class="container pb-5">
+    <div class="row gy-4">
+
+
+      <div class="col-lg-6">
+        <div class="card h-100 p-3 bg-surface border-0 rounded-3">
+          <div class="card-body">
+            <h3 class="card-title text-accent">FLO — Moved to Fillmore Detroit</h3>
+            <p><strong>Date:</strong> May&nbsp;5, 2025</p>
+            <p>Feel the energy as the UK's breakout R&amp;B trio lights up the stage with powerhouse vocals and viral grooves. <a href="https://www.flolikethis.com/">Lock in your tickets</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card h-100 p-3 bg-surface border-0 rounded-3">
+          <div class="card-body">
+            <h3 class="card-title text-accent">Sabrina Carpenter — Short N' Sweet Tour</h3>
+            <p><strong>Date:</strong> May&nbsp;13, 2025</p>
+            <p>A non-stop pop explosion of irresistible hooks and jaw-dropping stagecraft. <a href="https://store.sabrinacarpenter.com/pages/tour">Get your tickets</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card h-100 p-3 bg-surface border-0 rounded-3">
+          <div class="card-body">
+            <h3 class="card-title text-accent">SiR — Step Into The Light Tour</h3>
+            <p><strong>Date:</strong> May&nbsp;13, 2025</p>
+            <p>An electrifying R&amp;B odyssey of smooth grooves and soul-stirring vibes. <a href="https://www.inglewoodsir.com/">Tickets available here</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card h-100 p-3 bg-surface border-0 rounded-3">
+          <div class="card-body">
+            <h3 class="card-title text-accent">Beyoncé — Cowboy Carter Tour</h3>
+            <p><strong>Date:</strong> May&nbsp;16, 2025</p>
+            <p>Saddle up as Beyoncé blends country charm with pop royalty. <a href="https://www.beyonce.com/">Secure your spot</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card h-100 p-3 bg-surface border-0 rounded-3">
+          <div class="card-body">
+            <h3 class="card-title text-accent">EDC Detroit — Electric Daisy Carnival</h3>
+            <p><strong>Date:</strong> May&nbsp;14, 2025</p>
+            <p>A neon-fueled festival of DJs, immersive stages, and nonstop dance beats. <a href="https://lasvegas.electricdaisycarnival.com/">Join the party</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card h-100 p-3 bg-surface border-0 rounded-3">
+          <div class="card-body">
+            <h3 class="card-title text-accent">Billie Eilish — Hit Me Hard and Soft Tour</h3>
+            <p><strong>Date:</strong> May&nbsp;24, 2025</p>
+            <p>A fusion of intimate whispers and cinematic crescendos from Billie. <a href="https://store.billieeilish.com/">Get your tickets now</a>.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="text-center py-3">
+    <div class="container">
+      <p class="mb-0 text-surface">&copy; 2025 The Fillmore Concert &amp; Event Center. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-<!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_auto -->

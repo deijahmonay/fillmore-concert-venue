@@ -1,89 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Fillmore</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    main {
-      padding: 20px;
-    }
-
-    figure {
-      text-align: center;
-      margin-bottom: 25px;
-    }
-
-    .intro, .offers {
-      background-color: rgb(16, 30, 40);
-      padding: 20px;
-      border-radius: 4px;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-    color: rgb(217, 188, 50);
-    margin-bottom: 10px;
-    font-size: 28px;
-    text-align: center;
-  }
-
-  h2 {
-    color: rgb(120, 169, 111);
-    margin-bottom: 10px;
-    font-size: 24px;
-  }
-
-  p, li {
-    color: rgb(218, 218, 203);
-    font-size: 16px;
-    list-style: circle;
-  }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header>
-    <nav class="navbar">
-      <a href="index.html" class="logo">
-        <img src="photos/reallogo.png"
-             alt="The Fillmore logo"
-             width="100"
-             height="77">
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="menu.html">Food &amp; Drinks</a></li>
-        <li><a href="location.html">Location</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="photos/reallogo.png" alt="The Fillmore logo" width="100" height="77">
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Food &amp; Drinks</a></li>
+            <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <figure>
-    <img src="photos/reallogo.png" alt="Fillmore official logo" width="800" height="675">
-  </figure>
+  <main>
 
-  <main class="home">
-    <section class="intro">
-      <h1>Welcome to The Fillmore Concert & Event Center</h1>
-      <p>Experience the best in live music, amazing food, and unforgettable memories. Our venue hosts top artists and world-class festivals.</p>
+    <section class="hero d-flex align-items-center text-center text-white"
+             style="background:url('photos/crowdsurg.png') center/cover; height:90vh;">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Unforgettable Nights at The Fillmore</h1>
+        <p class="lead">Live music, bold flavors, and stunning views — all in one iconic space.</p>
+        <a href="events.html" class="btn btn-lg btn-outline-light mt-3">Explore Events</a>
+      </div>
     </section>
 
-    <section class="offers">
-      <h2>What We Offer</h2>
-      <ul>
-        <li>Live music festivals and concerts</li>
-        <li>Food and drink options</li>
-        <li>Premium location with scenic views</li>
-        <li>Easy online booking</li>
-      </ul>
+    <section class="offers py-5 bg-surface">
+      <div class="container">
+        <h2 class="text-center mb-4 text-primary">What We Offer</h2>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-8">
+            <ul class="fs-5" style="list-style-type: none; padding-left: 0;">
+              <li>&#183; Live music festivals and concerts</li>
+              <li>&#183; Delicious food and curated drinks</li>
+              <li>&#183; Scenic views from every seat</li>
+              <li>&#183; Easy online booking anytime</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2025 The FillMore Concert &amp; Event Center. All rights reserved.</p>
+  <footer class="text-center py-3">
+    <div class="container">
+      <p class="mb-0 text-surface">&copy; 2025 The Fillmore Concert &amp; Event Center. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

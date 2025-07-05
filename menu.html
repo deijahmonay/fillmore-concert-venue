@@ -1,181 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu - The Fillmore</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    header h1 {
-    text-align: center;
-    margin-top: 15px;
-    color: rgb(243, 217, 84);
-  }
-
-  main {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-  }
-
-  figure {
-    text-align: center;
-  }
-
-  section {
-    background-color: rgb(16, 30, 40);
-    padding: 20px;
-    border-radius: 4px;
-  }
-
-  section h2 {
-    color:rgb(217, 188, 50);
-  }
-  section h3 {
-    color: rgb(120, 169, 111);
-    margin-bottom: 10px;
-  }
-
-  section ul {
-    padding-left: 20px;
-    margin-bottom: 15px;
-    list-style: circle;
-  }
-
-  section li {
-    margin-bottom: 5px;
-    color: rgb(237, 237, 219);
-  }
-
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu &#124; The Fillmore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <h1>Food &amp; Drinks at The Fillmore</h1>
-    <nav class="navbar">
-      <img src="photos/reallogo.png" alt="Offical Logo" width="100" height="77">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="menu.html">Food &amp; Drinks</a></li>
-        <li><a href="location.html">Location</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="photos/reallogo.png" alt="The Fillmore logo" width="100" height="77"></a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link active" href="menu.html">Food &amp; Drinks</a></li>
+            <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <figure>
-      <img src="photos/foodbev.png" alt="Food and drinks image" width="500" height="575">
-    </figure>  <!-- I'm not sure if my use of figure here is correct, -->
-
-
-      <h2>Our Food &amp; Drink Menu</h2>
-
-      <section>
-        <h3>Burgers &#38 Mains</h3>
-        <table>
-          <tr>
-            <th>Item</th>
-            <th>Price</th>
-          </tr>
-          <tr>
-            <td>Bacon Cheeseburger</td>
-            <td>12.50</td>
-          </tr>
-          <tr>
-            <td>Cheeseburger</td>
-            <td>11.00</td>
-          </tr>
-          <tr>
-            <td>BBQ Pulled Pork Sandwich</td>
-            <td>11.00</td>
-          </tr>
-          <tr>
-            <td>Chicken Tenders</td>
-            <td>9.50</td>
-          </tr>
-          <tr>
-            <td>Veggie Burger</td>
-            <td>10.00</td>
-          </tr>
-        </table>
-      </section>
-
-      <section>
-        <h3>Sides</h3>
-        <table>
-          <th>Item</th>
-          <th>Price</th>
-          <tr>
-            <td>French Fries</td>
-            <td>5.00</td>
-          </tr>
-          <tr>
-            <td>Garlic Fries</td>
-            <td>6.00</td>
-          </tr>
-          <tr>
-            <td>Loaded Nachos</td>
-            <td>7.00</td>
-          </tr>
-          <tr>
-            <td>Onion Rings</td>
-            <td>5.50</td>
-          </tr>
-        </table>
-      </section>
-
-      <section>
-        <h3>Snacks</h3>
-        <table>
-          <th>Item</th>
-          <th>Price</th>
-          <tr>
-            <td>Soft Pretzel</td>
-            <td>4.50</td>
-          </tr>
-          <tr>
-            <td>Assorted Nuts</td>
-            <td>3.00</td>
-          </tr>
-          <tr>
-            <td>Onion Rings</td>
-            <td>5.50</td>
-          </tr>
-        </table>
-      </section>
-
-      <section>
-        <h3>Beverages</h3>
-        <table>
-          <th>Item</th>
-          <th>Price</th>
-          <tr>
-            <td>Lemonade</td>
-            <td>3.50</td>
-          </tr>
-          <tr>
-            <td>Craft Beer</td>
-            <td>8.00</td>
-          </tr>
-          <tr>
-            <td>Craft Cocktails</td>
-            <td>10.00</td>
-          </tr>
-          <tr>
-            <td>Bottled Water</td>
-            <td>2.00</td>
-          </tr>
-        </table>
-      </section>
-
+  <main class="container-fluid px-0">
+    <div class="position-relative text-center mb-5">
+      <img src="photos/foodbev.png" alt="Food and drinks" class="img-fluid w-100 rounded shadow" style="max-height:450px;object-fit:cover;">
+      <div class="position-absolute top-50 start-50 translate-middle text-white">
+        <h1 class="display-4 fw-bold" style="text-shadow:1px 1px 6px rgba(0,0,0,.7);">Food &amp; Drinks at The Fillmore</h1>
+      </div>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 The FillMore Concert &amp; Event Center. All rights reserved. </p>
+  <main class="container pb-5">
+    <div class="row g-4">
+
+      <div class="col-md-6">
+        <div class="card h-100 bg-surface border-0">
+          <div class="card-body">
+            <h3 class="card-title text-accent">Burgers &amp; Mains</h3>
+            <table class="table">
+              <tbody>
+                <tr><td>Bacon Cheeseburger</td><td class="text-end">$12.50</td></tr>
+                <tr><td>Cheeseburger</td><td class="text-end">$11.00</td></tr>
+                <tr><td>BBQ Pulled Pork Sandwich</td><td class="text-end">$11.00</td></tr>
+                <tr><td>Chicken Tenders</td><td class="text-end">$9.50</td></tr>
+                <tr><td>Veggie Burger</td><td class="text-end">$10.00</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 bg-surface border-0">
+          <div class="card-body">
+            <h3 class="card-title text-accent">Sides</h3>
+            <table class="table">
+              <tbody>
+                <tr><td>French Fries</td><td class="text-end">$5.00</td></tr>
+                <tr><td>Garlic Fries</td><td class="text-end">$6.00</td></tr>
+                <tr><td>Loaded Nachos</td><td class="text-end">$7.00</td></tr>
+                <tr><td>Onion Rings</td><td class="text-end">$5.50</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 bg-surface border-0">
+          <div class="card-body">
+            <h3 class="card-title text-accent">Snacks</h3>
+            <table class="table">
+              <tbody>
+                <tr><td>Soft Pretzel</td><td class="text-end">$4.50</td></tr>
+                <tr><td>Assorted Nuts</td><td class="text-end">$3.00</td></tr>
+                <tr><td>Onion Rings</td><td class="text-end">$5.50</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 bg-surface border-0">
+          <div class="card-body">
+            <h3 class="card-title text-accent">Beverages</h3>
+            <table class="table">
+              <tbody>
+                <tr><td>Lemonade</td><td class="text-end">$3.50</td></tr>
+                <tr><td>Craft Beer</td><td class="text-end">$8.00</td></tr>
+                <tr><td>Craft Cocktails</td><td class="text-end">$10.00</td></tr>
+                <tr><td>Bottled Water</td><td class="text-end">$2.00</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="text-center py-3">
+    <div class="container">
+      <p class="mb-0 text-surface">&copy; 2025 The Fillmore Concert &amp; Event Center. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -3,137 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us – The Fillmore</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-        main {
-      padding: 20px;
-    }
-
-    figure {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    section {
-      background-color: rgb(16, 30, 40);
-      padding: 20px;
-      border-radius: 4px;
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      color: rgb(217, 188, 50);
-      margin-bottom: 10px;
-      font-size: 24px;
-    }
-
-    section p {
-      color: rgb(237, 237, 219);
-      font-size: 16px;
-    }
-
-    fieldset {
-      border: none;
-      padding: 0;
-    }
-
-    legend {
-      color: rgb(120, 169, 111);
-      font-weight: bold;
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    label {
-      display: block;
-      margin-top: 10px;
-      margin-bottom: 5px;
-      color: rgb(237, 237, 219);
-      font-size: 14px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      border-radius: 4px;
-      border: none;
-      background-color: rgb(235, 235, 235);
-      color: rgb(20, 20, 20);
-      font-size: 14px;
-    }
-
-    button {
-      background-color: rgb(217, 188, 50);
-      color: rgb(20, 20, 20);
-      border: none;
-      padding: 10px 20px;
-      margin-top: 20px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-
-    button:hover {
-      background-color: rgb(243, 217, 84);
-    }
-
-    button:active {
-      background-color:rgb(107, 237, 85)
-    }
-
-  </style>
+  <title>Contact &#124; The Fillmore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header>
-    <nav class="navbar">
-      <img src="photos/reallogo.png" alt="Offical Logo" width="100" height="77">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="menu.html">Food &amp; Drinks</a></li>
-        <li><a href="location.html">Location</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="photos/reallogo.png" alt="The Fillmore logo" width="100" height="77"></a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Food &amp; Drinks</a></li>
+            <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <figure>
-      <img src="photos/contacttwo.png" alt="Contact Page Image" width="620" height="470">
-    </figure>
+  <main class="container py-5 mt-5">
+    <div class="row align-items-center g-4">
 
-    <section>
-      <h2>Contact Us</h2>
-      <p>Have a question or need more information? Send us a message and we&#39;ll get back to you soon!</p>
-    </section>
+      <div class="col-lg-6">
+        <img src="photos/contacttwo.png" alt="Contact Sign hovering abover stage with a microphe and spotlight" class="img-fluid rounded shadow">
+      </div>
 
-    <section class="contact-form">
-      <form action="#" method="POST">
-        <fieldset>
-          <legend>Leave a Message</legend>
+      <div class="col-lg-6">
+        <div class="card p-4 bg-surface border-0 rounded-3">
+          <form action="#" method="post" novalidate>
+            <fieldset>
+              <legend class="text-primary fs-4 fw-semibold">Get in Touch</legend>
 
-          <label for="full-name">Full Name:</label>
-          <input type="text" id="full-name" name="full-name" placeholder="Enter your name" required>
+              <div class="mb-3">
+                <label for="fullName" class="form-label text-accent fw-semibold">Full Name</label>
+                <input type="text" id="fullName" name="fullName" class="form-control" required placeholder="Your name">
+              </div>
 
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+              <div class="mb-3">
+                <label for="email" class="form-label text-accent fw-semibold">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" required placeholder="you@example.com">
+              </div>
 
-          <label for="event-date">Desired Event Date:</label>
-          <input type="date" id="event-date" name="event-date" required>
+              <div class="mb-3">
+                <label for="phone" class="form-label text-accent fw-semibold">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="(555) 555-5555">
+              </div>
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" placeholder="Please leave a detailed message including any information relevant to your event" required></textarea>
+              <div class="mb-3">
+                <label for="eventDate" class="form-label text-accent fw-semibold">Desired Event Date</label>
+                <input type="date" id="eventDate" name="eventDate" class="form-control">
+              </div>
 
-        <button type="submit">Submit</button>
-      </fieldset>
+              <div class="mb-3">
+                <label for="message" class="form-label text-accent fw-semibold">Message</label>
+                <textarea id="message" name="message" class="form-control" rows="5" required placeholder="Tell us about your event…"></textarea>
+              </div>
 
-      </form>
-    </section>
+              <button type="submit" class="btn btn-primary w-100">Get in the Mix</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 The FillMore Concert &amp; Event Center. All rights reserved&#46;</p>
+  <footer class="text-center py-3">
+    <div class="container">
+      <p class="mb-0 text-surface">&copy; 2025 The Fillmore Concert &amp; Event Center. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
